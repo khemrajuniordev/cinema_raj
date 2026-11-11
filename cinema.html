@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIÈRE — Cinema Premium</title>
+  <link rel="stylesheet" href="cinema.css">
+</head>
+<body>
+
+  <!-- ===== Fundo aurora animado (puro CSS) ===== -->
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora__blob aurora__blob--1"></span>
+    <span class="aurora__blob aurora__blob--2"></span>
+    <span class="aurora__blob aurora__blob--3"></span>
+    <div class="aurora__grid"></div>
+    <div class="aurora__noise"></div>
+  </div>
+
+  <!-- ===== Navbar glass ===== -->
+  <header class="nav">
+    <a href="#top" class="brand">
+      <span class="brand__mark">◐</span>
+      <span class="brand__name">LUMIÈRE</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#destaque">Destaque</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#generos">Gêneros</a>
+    </nav>
+    <a href="#catalogo" class="btn btn--sm btn--glow">Assistir agora</a>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="destaque">
+      <div class="hero__content">
+        <span class="chip">
+          <span class="chip__dot"></span> Em destaque esta semana
+        </span>
+        <h1 class="hero__title">
+          Onde cada <span class="grad">frame</span><br>vira memória.
+        </h1>
+        <p class="hero__lead">
+          Uma curadoria de filmes que atravessam gerações — do suspense natalino
+          ao romance à beira-mar. Luz, câmera e emoção em alta definição.
+        </p>
+
+        <div class="hero__meta">
+          <span class="rating">
+            <b>★ 9.1</b> nota média
+          </span>
+          <span class="sep"></span>
+          <span>+120 títulos</span>
+          <span class="sep"></span>
+          <span>4K · HDR · Dolby</span>
+        </div>
+
+        <div class="hero__actions">
+          <a href="#catalogo" class="btn btn--primary">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Explorar catálogo
+          </a>
+          <a href="#filme-intocaveis" class="btn btn--ghost">+ Minha lista</a>
+        </div>
+      </div>
+
+      <!-- Pôster com tilt 3D + brilho -->
+      <div class="hero__stage">
+        <figure class="poster3d">
+          <div class="poster3d__glow"></div>
+          <img src="img/intocaveis.png" alt="Pôster do filme Intocáveis">
+          <figcaption class="poster3d__badge">
+            <span class="ring" style="--p:92">
+              <b>92</b>
+            </span>
+            <span>Aclamado<br><small>pela crítica</small></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>DRAMA</span><span>•</span><span>COMÉDIA</span><span>•</span>
+        <span>ROMANCE</span><span>•</span><span>AVENTURA</span><span>•</span>
+        <span>CLÁSSICOS</span><span>•</span><span>FAMÍLIA</span><span>•</span>
+        <span>DRAMA</span><span>•</span><span>COMÉDIA</span><span>•</span>
+        <span>ROMANCE</span><span>•</span><span>AVENTURA</span><span>•</span>
+        <span>CLÁSSICOS</span><span>•</span><span>FAMÍLIA</span><span>•</span>
+      </div>
+    </div>
+
+    <!-- ===== Catálogo com filtros CSS-only ===== -->
+    <section class="section" id="catalogo">
+      <header class="section__head">
+        <h2 class="section__title">Em cartaz <span class="grad">esta semana</span></h2>
+        <p class="section__sub">Passe o mouse nos cards. Filtre por gênero — tudo em CSS puro.</p>
+      </header>
+
+      <!-- radios controlam o filtro -->
+      <div class="filters" id="generos">
+        <input type="radio" name="genre" id="f-all" checked>
+        <label for="f-all">Todos</label>
+        <input type="radio" name="genre" id="f-drama">
+        <label for="f-drama">Drama</label>
+        <input type="radio" name="genre" id="f-comedia">
+        <label for="f-comedia">Comédia</label>
+        <input type="radio" name="genre" id="f-romance">
+        <label for="f-romance">Romance</label>
+
+        <div class="grid">
+
+          <article class="card" data-genre="comedia" tabindex="0">
+            <div class="card__media">
+              <img src="img/esqueceram.png" alt="Esqueceram de Mim">
+              <span class="card__tag">★ 7.6</span>
+              <div class="card__shine"></div>
+              <a href="#filme-esqueceram" class="card__play" aria-label="Detalhes">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </a>
+            </div>
+            <div class="card__body">
+              <h3>Esqueceram de Mim</h3>
+              <p>1990 · Comédia · Família</p>
+            </div>
+          </article>
+
+          <article class="card" data-genre="drama" tabindex="0">
+            <div class="card__media">
+              <img src="img/intocaveis.png" alt="Intocáveis">
+              <span class="card__tag">★ 8.5</span>
+              <div class="card__shine"></div>
+              <a href="#filme-intocaveis" class="card__play" aria-label="Detalhes">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </a>
+            </div>
+            <div class="card__body">
+              <h3>Intocáveis</h3>
+              <p>2011 · Drama · Comédia</p>
+            </div>
+          </article>
+
+          <article class="card" data-genre="romance" tabindex="0">
+            <div class="card__media">
+              <img src="img/lagoaazul.png" alt="Lagoa Azul">
+              <span class="card__tag">★ 6.0</span>
+              <div class="card__shine"></div>
+              <a href="#filme-lagoa" class="card__play" aria-label="Detalhes">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </a>
+            </div>
+            <div class="card__body">
+              <h3>Lagoa Azul</h3>
+              <p>1980 · Romance · Aventura</p>
+            </div>
+          </article>
+
+          <article class="card" data-genre="drama" tabindex="0">
+            <div class="card__media">
+              <img src="img/header.png" alt="Sessão especial">
+              <span class="card__tag">★ 8.9</span>
+              <div class="card__shine"></div>
+              <a href="#filme-intocaveis" class="card__play" aria-label="Detalhes">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </a>
+            </div>
+            <div class="card__body">
+              <h3>Sessão da Meia-Noite</h3>
+              <p>Reprise · Drama · Cult</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Carrossel scroll-snap ===== -->
+    <section class="section section--tight">
+      <header class="section__head">
+        <h2 class="section__title">Continue <span class="grad">assistindo</span></h2>
+      </header>
+      <div class="rail">
+        <a href="#filme-esqueceram" class="rail__item"><img src="img/esqueceram.png" alt=""><span>Esqueceram de Mim</span></a>
+        <a href="#filme-intocaveis" class="rail__item"><img src="img/intocaveis.png" alt=""><span>Intocáveis</span></a>
+        <a href="#filme-lagoa" class="rail__item"><img src="img/lagoaazul.png" alt=""><span>Lagoa Azul</span></a>
+        <a href="#filme-intocaveis" class="rail__item"><img src="img/header.png" alt=""><span>Sessão Cult</span></a>
+        <a href="#filme-esqueceram" class="rail__item"><img src="img/esqueceram.png" alt=""><span>Clássicos</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="brand"><span class="brand__mark">◐</span><span class="brand__name">LUMIÈRE</span></span>
+    <p>Feito com HTML & CSS avançado — sem frameworks.</p>
+    <span class="footer__copy">© 2026 Lumière Cinema</span>
+  </footer>
+
+  <!-- ===== Modais CSS-only via :target ===== -->
+  <div class="modal" id="filme-esqueceram">
+    <a href="#catalogo" class="modal__backdrop" aria-label="Fechar"></a>
+    <div class="modal__card">
+      <img src="img/esqueceram.png" alt="Esqueceram de Mim">
+      <div class="modal__info">
+        <a href="#catalogo" class="modal__close">✕</a>
+        <h3>Esqueceram de Mim</h3>
+        <p class="modal__meta">1990 · Comédia · 1h 43min</p>
+        <p>Kevin é esquecido em casa no Natal e precisa defender o lar de dois ladrões atrapalhados com armadilhas geniais.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="filme-intocaveis">
+    <a href="#catalogo" class="modal__backdrop" aria-label="Fechar"></a>
+    <div class="modal__card">
+      <img src="img/intocaveis.png" alt="Intocáveis">
+      <div class="modal__info">
+        <a href="#catalogo" class="modal__close">✕</a>
+        <h3>Intocáveis</h3>
+        <p class="modal__meta">2011 · Drama · 1h 52min</p>
+        <p>A amizade improvável entre um aristocrata tetraplégico e seu cuidador — comovente, divertida e inesquecível.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="filme-lagoa">
+    <a href="#catalogo" class="modal__backdrop" aria-label="Fechar"></a>
+    <div class="modal__card">
+      <img src="img/lagoaazul.png" alt="Lagoa Azul">
+      <div class="modal__info">
+        <a href="#catalogo" class="modal__close">✕</a>
+        <h3>Lagoa Azul</h3>
+        <p class="modal__meta">1980 · Romance · 1h 44min</p>
+        <p>Dois jovens náufragos crescem juntos numa ilha paradisíaca e descobrem o amor longe da civilização.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

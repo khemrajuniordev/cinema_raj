@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinemas Raj — Ramesar Shopping · Manaus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora__blob aurora__blob--1"></span>
+    <span class="aurora__blob aurora__blob--2"></span>
+    <span class="aurora__blob aurora__blob--3"></span>
+    <div class="aurora__grid"></div>
+    <div class="aurora__noise"></div>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav">
+    <a href="#top" class="brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="3"/>
+          <circle cx="24" cy="24" r="5.2" fill="currentColor"/>
+          <circle cx="24" cy="10" r="4.2" fill="currentColor"/>
+          <circle cx="36.1" cy="17" r="4.2" fill="currentColor"/>
+          <circle cx="36.1" cy="31" r="4.2" fill="currentColor"/>
+          <circle cx="24" cy="38" r="4.2" fill="currentColor"/>
+          <circle cx="11.9" cy="31" r="4.2" fill="currentColor"/>
+          <circle cx="11.9" cy="17" r="4.2" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand__name">Cinemas <b>Raj</b></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav class="nav__links" id="nav-links">
+      <a href="#catalogo">Em Cartaz</a>
+      <a href="#programacao">Programação</a>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Abrir menu" aria-controls="nav-links">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </label>
+    <a href="#catalogo" class="btn btn--sm btn--glow">Comprar Ingresso</a>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="destaque">
+      <div class="hero__content">
+        <span class="chip">
+          <span class="chip__dot"></span> Em cartaz esta semana · Ramesar Shopping
+        </span>
+        <h1 class="hero__title">
+          Garanta seu ingresso<br><span class="grad">para a próxima sessão.</span>
+        </h1>
+        <p class="hero__lead">
+          8 filmes em cartaz no Ramesar Shopping, em Manaus. Escolha o horário, selecione seu assento e finalize a compra em poucos cliques.
+        </p>
+
+        <div class="hero__meta">
+          <span>8 filmes em cartaz</span>
+          <span class="sep"></span>
+          <span>4 salas · Dolby Atmos</span>
+          <span class="sep"></span>
+          <span>Ramesar Shopping, Manaus</span>
+        </div>
+
+        <div class="hero__actions">
+          <a href="#catalogo" class="btn btn--primary">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Ver filmes em cartaz
+          </a>
+          <a href="#programacao" class="btn btn--ghost">Ver programação</a>
+        </div>
+      </div>
+
+      <div class="hero__stage">
+        <figure class="poster3d">
+          <img src="img/intocaveis.png" alt="Pôster do filme Intocáveis">
+          <figcaption class="poster3d__badge">
+            <span class="ring"><b>8.5</b></span>
+            <span>Aclamado<br><small>pela crítica</small></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>DRAMA</span><span>•</span><span>COMÉDIA</span><span>•</span>
+        <span>ROMANCE</span><span>•</span><span>AÇÃO</span><span>•</span>
+        <span>FICÇÃO</span><span>•</span><span>CRIME</span><span>•</span>
+        <span>DRAMA</span><span>•</span><span>COMÉDIA</span><span>•</span>
+        <span>ROMANCE</span><span>•</span><span>AÇÃO</span><span>•</span>
+        <span>FICÇÃO</span><span>•</span><span>CRIME</span><span>•</span>
+      </div>
+    </div>
+
+    <!-- ===== Filmes em Cartaz ===== -->
+    <section class="section" id="catalogo">
+      <header class="section__head">
+        <h2 class="section__title">Em Cartaz <span class="grad">agora</span></h2>
+        <p class="section__sub">8 filmes em exibição esta semana · Ramesar Shopping · Manaus</p>
+      </header>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(200px,1fr));">
+
+        <article class="card">
+          <div class="card__media">
+            <img src="img/esqueceram.png" alt="Esqueceram de Mim">
+            <span class="card__tag">★ 7.6</span>
+            <div class="card__actions">
+              <a href="#filme-esqueceram" class="card__btn card__btn--details">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Ver detalhes
+              </a>
+              <a href="https://www.youtube.com/watch?v=jEDaVHmw7r4" target="_blank" rel="noopener" class="card__btn card__btn--trailer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>Trailer
+              </a>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3>Esqueceram de Mim</h3>
+            <p>Comédia · Livre · 1h 43min</p>
+            <a href="comprar-sessao.html#esqueceram" class="card__ticket">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+              Comprar Ingresso
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="img/intocaveis.png" alt="Intocáveis">
+            <span class="card__tag">★ 8.5</span>
+            <div class="card__actions">
+              <a href="#filme-intocaveis" class="card__btn card__btn--details">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Ver detalhes
+              </a>
+              <a href="https://www.youtube.com/watch?v=34WIbmXkewU" target="_blank" rel="noopener" class="card__btn card__btn--trailer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>Trailer
+              </a>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3>Intocáveis</h3>
+            <p>Drama · 12 anos · 1h 52min</p>
+            <a href="comprar-sessao.html#intocaveis" class="card__ticket">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+              Comprar Ingresso
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="img/lagoaazul.png" alt="Lagoa Azul">
+            <span class="card__tag">★ 6.0</span>
+            <div class="card__actions">
+              <a href="#filme-lagoa" class="card__btn card__btn--details">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Ver detalhes
+              </a>
+              <a href="https://www.youtube.com/watch?v=A0UapwJIJn8" target="_blank" rel="noopener" class="card__btn card__btn--trailer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>Trailer
+              </a>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3>Lagoa Azul</h3>
+            <p>Romance · 14 anos · 1h 44min</p>
+            <a href="comprar-sessao.html#lagoa" class="card__ticket">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+              Comprar Ingresso
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="img/forrest.jpg" alt="Forrest Gump">
+            <span class="card__tag">★ 8.8</span>
+            <div class="card__actions">
+              <a href="#filme-forrest" class="card__btn card__btn--details">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Ver detalhes
+              </a>
+              <a href="https://www.youtube.com/watch?v=XHhAG-YLdk8" target="_blank" rel="noopener" class="card__btn card__btn--trailer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>Trailer
+              </a>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3>Forrest Gump</h3>
+            <p>Drama · 12 anos · 2h 22min</p>
+            <a href="comprar-sessao.html#forrest" class="card__ticket">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+              Comprar Ingresso
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="img/matrix.png" alt="Matrix">
+            <span class="card__tag">★ 8.7</span>
+            <div class="card__actions">
+              <a href="#filme-matrix" class="card__btn card__btn--details">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Ver detalhes
+              </a>
+              <a href="https://www.youtube.com/watch?v=vKQi3bBA1y8" target="_blank" rel="noopener" class="card__btn card__btn--trailer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>Trailer
+              </a>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3>Matrix</h3>
+            <p>Ficção · 14 anos · 2h 16min</p>
+            <a href="comprar-sessao.html#matrix" class="card__ticket">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+              Comprar Ingresso
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="img/chefao.jpg" alt="O Poderoso Chefão">
+            <span class="card__tag">★ 9.2</span>
+            <div class="card__actions">
+              <a href="#filme-chefao" class="card__btn card__btn--details">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Ver detalhes
+              </a>
+              <a href="https://www.youtube.com/watch?v=1x0GpEZnwa8" target="_blank" rel="noopener" class="card__btn card__btn--trailer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>Trailer
+              </a>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3>O Poderoso Chefão</h3>
+            <p>Crime · 14 anos · 2h 55min</p>
+            <a href="comprar-sessao.html#chefao" class="card__ticket">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+              Comprar Ingresso
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="img/pulp.jpg" alt="Pulp Fiction">
+            <span class="card__tag">★ 8.9</span>
+            <div class="card__actions">
+              <a href="#filme-pulp" class="card__btn card__btn--details">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Ver detalhes
+              </a>
+              <a href="https://www.youtube.com/watch?v=tGpTpVyI_OQ" target="_blank" rel="noopener" class="card__btn card__btn--trailer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>Trailer
+              </a>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3>Pulp Fiction</h3>
+            <p>Crime · 16 anos · 2h 34min</p>
+            <a href="comprar-sessao.html#pulp" class="card__ticket">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+              Comprar Ingresso
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="img/clube.jpg" alt="Clube da Luta">
+            <span class="card__tag">★ 8.8</span>
+            <div class="card__actions">
+              <a href="#filme-clube" class="card__btn card__btn--details">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Ver detalhes
+              </a>
+              <a href="https://www.youtube.com/watch?v=qtRKdVHc-cE" target="_blank" rel="noopener" class="card__btn card__btn--trailer">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>Trailer
+              </a>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3>Clube da Luta</h3>
+            <p>Drama · 18 anos · 2h 19min</p>
+            <a href="comprar-sessao.html#clube" class="card__ticket">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+              Comprar Ingresso
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Programação da Semana -->
+    <section class="section" id="programacao">
+      <header class="section__head">
+        <h2 class="section__title">Programação <span class="grad">da semana</span></h2>
+        <p class="section__sub">10 a 16 de novembro de 2026 · Ramesar Shopping · Manaus</p>
+      </header>
+
+      <div class="schedule">
+
+        <!-- Esqueceram de Mim -->
+        <div class="schedule__row">
+          <a href="#filme-esqueceram" class="schedule__poster">
+            <img src="img/esqueceram.png" alt="Esqueceram de Mim">
+          </a>
+          <div class="schedule__info">
+            <div class="schedule__title-row">
+              <h3>Esqueceram de Mim</h3>
+              <span class="schedule__tag schedule__tag--livre">Livre</span>
+              <span class="schedule__meta">1h 43min</span>
+            </div>
+            <div class="schedule__days">
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 1 · Dublado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">14h00</span>
+                  <span class="schedule__time">16h30</span>
+                  <span class="schedule__time">19h00</span>
+                  <span class="schedule__time schedule__time--last">21h30</span>
+                </div>
+              </div>
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 2 · Legendado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">15h00</span>
+                  <span class="schedule__time">17h30</span>
+                  <span class="schedule__time schedule__time--last">20h00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="comprar-sessao.html#esqueceram" class="schedule__btn">Comprar</a>
+        </div>
+
+        <!-- Intocáveis -->
+        <div class="schedule__row">
+          <a href="#filme-intocaveis" class="schedule__poster">
+            <img src="img/intocaveis.png" alt="Intocáveis">
+          </a>
+          <div class="schedule__info">
+            <div class="schedule__title-row">
+              <h3>Intocáveis</h3>
+              <span class="schedule__tag schedule__tag--12">12 anos</span>
+              <span class="schedule__meta">1h 52min</span>
+            </div>
+            <div class="schedule__days">
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 1 · Legendado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">15h00</span>
+                  <span class="schedule__time">17h45</span>
+                  <span class="schedule__time schedule__time--last">20h30</span>
+                </div>
+              </div>
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 3 · Dublado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">14h30</span>
+                  <span class="schedule__time">17h15</span>
+                  <span class="schedule__time schedule__time--last">20h00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="comprar-sessao.html#intocaveis" class="schedule__btn">Comprar</a>
+        </div>
+
+        <!-- Lagoa Azul -->
+        <div class="schedule__row">
+          <a href="#filme-lagoa" class="schedule__poster">
+            <img src="img/lagoaazul.png" alt="Lagoa Azul">
+          </a>
+          <div class="schedule__info">
+            <div class="schedule__title-row">
+              <h3>Lagoa Azul</h3>
+              <span class="schedule__tag schedule__tag--14">14 anos</span>
+              <span class="schedule__meta">1h 44min</span>
+            </div>
+            <div class="schedule__days">
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 2 · Dublado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">13h00</span>
+                  <span class="schedule__time">15h30</span>
+                  <span class="schedule__time schedule__time--last">18h00</span>
+                </div>
+              </div>
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 4 · Legendado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">14h00</span>
+                  <span class="schedule__time">16h30</span>
+                  <span class="schedule__time schedule__time--last">19h00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="comprar-sessao.html#lagoa" class="schedule__btn">Comprar</a>
+        </div>
+
+        <!-- Forrest Gump -->
+        <div class="schedule__row">
+          <a href="#filme-forrest" class="schedule__poster">
+            <img src="img/forrest.jpg" alt="Forrest Gump">
+          </a>
+          <div class="schedule__info">
+            <div class="schedule__title-row">
+              <h3>Forrest Gump</h3>
+              <span class="schedule__tag schedule__tag--12">12 anos</span>
+              <span class="schedule__meta">2h 22min</span>
+            </div>
+            <div class="schedule__days">
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 3 · Dublado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">13h30</span>
+                  <span class="schedule__time">16h15</span>
+                  <span class="schedule__time schedule__time--last">19h00</span>
+                </div>
+              </div>
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 1 · Legendado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">14h45</span>
+                  <span class="schedule__time">17h30</span>
+                  <span class="schedule__time schedule__time--last">20h15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="comprar-sessao.html#forrest" class="schedule__btn">Comprar</a>
+        </div>
+
+        <!-- Matrix -->
+        <div class="schedule__row">
+          <a href="#filme-matrix" class="schedule__poster">
+            <img src="img/matrix.png" alt="Matrix">
+          </a>
+          <div class="schedule__info">
+            <div class="schedule__title-row">
+              <h3>Matrix</h3>
+              <span class="schedule__tag schedule__tag--14">14 anos</span>
+              <span class="schedule__meta">2h 16min</span>
+            </div>
+            <div class="schedule__days">
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 2 · Dublado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">14h00</span>
+                  <span class="schedule__time">16h45</span>
+                  <span class="schedule__time schedule__time--last">19h30</span>
+                </div>
+              </div>
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 4 · Legendado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">15h15</span>
+                  <span class="schedule__time">18h00</span>
+                  <span class="schedule__time schedule__time--last">20h45</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="comprar-sessao.html#matrix" class="schedule__btn">Comprar</a>
+        </div>
+
+        <!-- O Poderoso Chefão -->
+        <div class="schedule__row">
+          <a href="#filme-chefao" class="schedule__poster">
+            <img src="img/chefao.jpg" alt="O Poderoso Chefão">
+          </a>
+          <div class="schedule__info">
+            <div class="schedule__title-row">
+              <h3>O Poderoso Chefão</h3>
+              <span class="schedule__tag schedule__tag--14">14 anos</span>
+              <span class="schedule__meta">2h 55min</span>
+            </div>
+            <div class="schedule__days">
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 1 · Legendado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">13h00</span>
+                  <span class="schedule__time">16h30</span>
+                  <span class="schedule__time schedule__time--last">20h00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="comprar-sessao.html#chefao" class="schedule__btn">Comprar</a>
+        </div>
+
+        <!-- Pulp Fiction -->
+        <div class="schedule__row">
+          <a href="#filme-pulp" class="schedule__poster">
+            <img src="img/pulp.jpg" alt="Pulp Fiction">
+          </a>
+          <div class="schedule__info">
+            <div class="schedule__title-row">
+              <h3>Pulp Fiction</h3>
+              <span class="schedule__tag schedule__tag--16">16 anos</span>
+              <span class="schedule__meta">2h 34min</span>
+            </div>
+            <div class="schedule__days">
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 3 · Legendado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">14h30</span>
+                  <span class="schedule__time">17h45</span>
+                  <span class="schedule__time schedule__time--last">21h00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="comprar-sessao.html#pulp" class="schedule__btn">Comprar</a>
+        </div>
+
+        <!-- Clube da Luta -->
+        <div class="schedule__row">
+          <a href="#filme-clube" class="schedule__poster">
+            <img src="img/clube.jpg" alt="Clube da Luta">
+          </a>
+          <div class="schedule__info">
+            <div class="schedule__title-row">
+              <h3>Clube da Luta</h3>
+              <span class="schedule__tag schedule__tag--18">18 anos</span>
+              <span class="schedule__meta">2h 19min</span>
+            </div>
+            <div class="schedule__days">
+              <div class="schedule__day">
+                <span class="schedule__day-label">Sala 2 · Legendado</span>
+                <div class="schedule__times">
+                  <span class="schedule__time">15h00</span>
+                  <span class="schedule__time">18h00</span>
+                  <span class="schedule__time schedule__time--last">21h15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="comprar-sessao.html#clube" class="schedule__btn">Comprar</a>
+        </div>
+
+      </div>
+
+      <!-- Legenda -->
+      <div class="schedule__legend">
+        <span><span class="schedule__time" style="pointer-events:none">14h00</span> Sessão disponível</span>
+        <span><span class="schedule__time schedule__time--last" style="pointer-events:none">21h30</span> Última sessão do dia</span>
+        <span>Ingressos: <b>Inteira R$ 32,00</b> · Meia R$ 16,00 · 2ª feira R$ 18,00</span>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="brand"><span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="24" r="5.2" fill="currentColor"/><circle cx="24" cy="10" r="4.2" fill="currentColor"/><circle cx="36.1" cy="17" r="4.2" fill="currentColor"/><circle cx="36.1" cy="31" r="4.2" fill="currentColor"/><circle cx="24" cy="38" r="4.2" fill="currentColor"/><circle cx="11.9" cy="31" r="4.2" fill="currentColor"/><circle cx="11.9" cy="17" r="4.2" fill="currentColor"/></svg></span><span class="brand__name">Cinemas <b>Raj</b></span></span>
+    <p>Ramesar Shopping · Av. do Turismo, s/n · Manaus – AM</p>
+    <span class="footer__copy">© 2026 Cinemas Raj. Todos os direitos reservados.</span>
+  </footer>
+
+  <!-- ===== Modais de detalhes (CSS-only, :target) — padrão único para os 8 filmes do catálogo ===== -->
+  <div class="modal" id="filme-esqueceram">
+    <a href="#catalogo" class="modal__backdrop" aria-label="Fechar"></a>
+    <div class="modal__card">
+      <img src="img/esqueceram.png" alt="Esqueceram de Mim">
+      <div class="modal__info"><a href="#catalogo" class="modal__close">✕</a>
+        <h3>Esqueceram de Mim</h3>
+        <p class="modal__meta">1990 · Comédia · 1h 43min · ★ 7.6</p>
+        <p class="modal__synopsis">Kevin é esquecido em casa no Natal e precisa defender o lar de dois ladrões atrapalhados com armadilhas geniais.</p>
+        <div class="modal__crew">
+          <div><span>Direção</span><b>Chris Columbus</b></div>
+          <div><span>Elenco</span><b>Macaulay Culkin, Joe Pesci, Daniel Stern</b></div>
+        </div>
+        <div class="modal__actions">
+          <a href="comprar-sessao.html#esqueceram" class="modal__btn modal__btn--ticket">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+            Comprar Ingresso
+          </a>
+          <a href="https://www.youtube.com/watch?v=jEDaVHmw7r4" target="_blank" rel="noopener" class="modal__btn modal__btn--trailer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+            Ver Trailer
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="filme-intocaveis">
+    <a href="#catalogo" class="modal__backdrop" aria-label="Fechar"></a>
+    <div class="modal__card">
+      <img src="img/intocaveis.png" alt="Intocáveis">
+      <div class="modal__info"><a href="#catalogo" class="modal__close">✕</a>
+        <h3>Intocáveis</h3>
+        <p class="modal__meta">2011 · Drama · 1h 52min · ★ 8.5</p>
+        <p class="modal__synopsis">A amizade improvável entre um aristocrata tetraplégico e seu cuidador — comovente, divertida e inesquecível.</p>
+        <div class="modal__crew">
+          <div><span>Direção</span><b>Olivier Nakache, Éric Toledano</b></div>
+          <div><span>Elenco</span><b>François Cluzet, Omar Sy, Anne Le Ny</b></div>
+        </div>
+        <div class="modal__actions">
+          <a href="comprar-sessao.html#intocaveis" class="modal__btn modal__btn--ticket">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+            Comprar Ingresso
+          </a>
+          <a href="https://www.youtube.com/watch?v=34WIbmXkewU" target="_blank" rel="noopener" class="modal__btn modal__btn--trailer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+            Ver Trailer
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="filme-lagoa">
+    <a href="#catalogo" class="modal__backdrop" aria-label="Fechar"></a>
+    <div class="modal__card">
+      <img src="img/lagoaazul.png" alt="Lagoa Azul">
+      <div class="modal__info"><a href="#catalogo" class="modal__close">✕</a>
+        <h3>Lagoa Azul</h3>
+        <p class="modal__meta">1980 · Romance · 1h 44min · ★ 6.0</p>
+        <p class="modal__synopsis">Dois jovens náufragos crescem juntos numa ilha paradisíaca e descobrem o amor longe da civilização.</p>
+        <div class="modal__crew">
+          <div><span>Direção</span><b>Randal Kleiser</b></div>
+          <div><span>Elenco</span><b>Brooke Shields, Christopher Atkins</b></div>
+        </div>
+        <div class="modal__actions">
+          <a href="comprar-sessao.html#lagoa" class="modal__btn modal__btn--ticket">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+            Comprar Ingresso
+          </a>
+          <a href="https://www.youtube.com/watch?v=A0UapwJIJn8" target="_blank" rel="noopener" class="modal__btn modal__btn--trailer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+            Ver Trailer
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="filme-chefao">
+    <a href="#catalogo" class="modal__backdrop" aria-label="Fechar"></a>
+    <div class="modal__card">
+      <img src="img/chefao.jpg" alt="O Poderoso Chefão">
+      <div class="modal__info"><a href="#catalogo" class="modal__close">✕</a>
+        <h3>O Poderoso Chefão</h3>
+        <p class="modal__meta">1972 · Crime · Drama · 2h 55min · ★ 9.2</p>
+        <p class="modal__synopsis">O patriarca de uma família mafiosa transfere o controle de seu império clandestino ao filho relutante. Um marco do cinema.</p>
+        <div class="modal__crew">
+          <div><span>Direção</span><b>Francis Ford Coppola</b></div>
+          <div><span>Elenco</span><b>Marlon Brando, Al Pacino, James Caan</b></div>
+        </div>
+        <div class="modal__actions">
+          <a href="comprar-sessao.html#chefao" class="modal__btn modal__btn--ticket">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+            Comprar Ingresso
+          </a>
+          <a href="https://www.youtube.com/watch?v=1x0GpEZnwa8" target="_blank" rel="noopener" class="modal__btn modal__btn--trailer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+            Ver Trailer
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="filme-pulp">
+    <a href="#catalogo" class="modal__backdrop" aria-label="Fechar"></a>
+    <div class="modal__card">
+      <img src="img/pulp.jpg" alt="Pulp Fiction">
+      <div class="modal__info"><a href="#catalogo" class="modal__close">✕</a>
+        <h3>Pulp Fiction</h3>
+        <p class="modal__meta">1994 · Crime · Drama · 2h 34min · ★ 8.9</p>
+        <p class="modal__synopsis">Histórias entrelaçadas de gângsteres, um boxeador e dois assaltantes em Los Angeles, na narrativa não-linear de Tarantino.</p>
+        <div class="modal__crew">
+          <div><span>Direção</span><b>Quentin Tarantino</b></div>
+          <div><span>Elenco</span><b>John Travolta, Samuel L. Jackson, Uma Thurman</b></div>
+        </div>
+        <div class="modal__actions">
+          <a href="comprar-sessao.html#pulp" class="modal__btn modal__btn--ticket">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+            Comprar Ingresso
+          </a>
+          <a href="https://www.youtube.com/watch?v=tGpTpVyI_OQ" target="_blank" rel="noopener" class="modal__btn modal__btn--trailer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+            Ver Trailer
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="filme-forrest">
+    <a href="#catalogo" class="modal__backdrop" aria-label="Fechar"></a>
+    <div class="modal__card">
+      <img src="img/forrest.jpg" alt="Forrest Gump">
+      <div class="modal__info"><a href="#catalogo" class="modal__close">✕</a>
+        <h3>Forrest Gump</h3>
+        <p class="modal__meta">1994 · Drama · Romance · 2h 22min · ★ 8.8</p>
+        <p class="modal__synopsis">Um homem de coração simples atravessa décadas da história americana, sempre guiado pelo amor por Jenny.</p>
+        <div class="modal__crew">
+          <div><span>Direção</span><b>Robert Zemeckis</b></div>
+          <div><span>Elenco</span><b>Tom Hanks, Robin Wright, Gary Sinise</b></div>
+        </div>
+        <div class="modal__actions">
+          <a href="comprar-sessao.html#forrest" class="modal__btn modal__btn--ticket">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+            Comprar Ingresso
+          </a>
+          <a href="https://www.youtube.com/watch?v=XHhAG-YLdk8" target="_blank" rel="noopener" class="modal__btn modal__btn--trailer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+            Ver Trailer
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="filme-clube">
+    <a href="#catalogo" class="modal__backdrop" aria-label="Fechar"></a>
+    <div class="modal__card">
+      <img src="img/clube.jpg" alt="Clube da Luta">
+      <div class="modal__info"><a href="#catalogo" class="modal__close">✕</a>
+        <h3>Clube da Luta</h3>
+        <p class="modal__meta">1999 · Drama · Suspense · 2h 19min · ★ 8.8</p>
+        <p class="modal__synopsis">Um funcionário insone e um vendedor de sabão fundam um clube de luta clandestino que sai do controle.</p>
+        <div class="modal__crew">
+          <div><span>Direção</span><b>David Fincher</b></div>
+          <div><span>Elenco</span><b>Brad Pitt, Edward Norton, Helena Bonham Carter</b></div>
+        </div>
+        <div class="modal__actions">
+          <a href="comprar-sessao.html#clube" class="modal__btn modal__btn--ticket">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+            Comprar Ingresso
+          </a>
+          <a href="https://www.youtube.com/watch?v=qtRKdVHc-cE" target="_blank" rel="noopener" class="modal__btn modal__btn--trailer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+            Ver Trailer
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="filme-matrix">
+    <a href="#catalogo" class="modal__backdrop" aria-label="Fechar"></a>
+    <div class="modal__card">
+      <img src="img/matrix.png" alt="Matrix">
+      <div class="modal__info"><a href="#catalogo" class="modal__close">✕</a>
+        <h3>Matrix</h3>
+        <p class="modal__meta">1999 · Ficção · Ação · 2h 16min · ★ 8.7</p>
+        <p class="modal__synopsis">Um hacker descobre que a realidade é uma simulação e se junta à resistência contra as máquinas.</p>
+        <div class="modal__crew">
+          <div><span>Direção</span><b>Lilly e Lana Wachowski</b></div>
+          <div><span>Elenco</span><b>Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss</b></div>
+        </div>
+        <div class="modal__actions">
+          <a href="comprar-sessao.html#matrix" class="modal__btn modal__btn--ticket">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2c1.1 0 2 .9 2 2s-.9 2-2 2v2c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-1v-2h1v2zm0-4.5h-1v-2h1v2zm0-4.5h-1v-2h1v2z"/></svg>
+            Comprar Ingresso
+          </a>
+          <a href="https://www.youtube.com/watch?v=vKQi3bBA1y8" target="_blank" rel="noopener" class="modal__btn modal__btn--trailer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+            Ver Trailer
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

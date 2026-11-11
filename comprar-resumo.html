@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo e pagamento — Cinemas Raj</title>
+  <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="24" r="5.2" fill="currentColor"/><circle cx="24" cy="10" r="4.2" fill="currentColor"/><circle cx="36.1" cy="17" r="4.2" fill="currentColor"/><circle cx="36.1" cy="31" r="4.2" fill="currentColor"/><circle cx="24" cy="38" r="4.2" fill="currentColor"/><circle cx="11.9" cy="31" r="4.2" fill="currentColor"/><circle cx="11.9" cy="17" r="4.2" fill="currentColor"/></svg></span>
+      <span class="brand__name">Cinemas <b>Raj</b></span>
+    </a>
+    <a href="index.html#catalogo" class="nav__back"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>Voltar ao catálogo</a>
+  </header>
+
+  <main class="flow-main">
+    <h1 class="flow-title">Resumo &amp; <span class="grad">pagamento</span></h1>
+    <p class="flow-sub">Confira o pedido e escolha a forma de pagamento.</p>
+  <div class="stepper">
+    <div class="stepper__step is-done"><span class="stepper__num">1</span><span class="stepper__label">Sessão</span></div>
+    <div class="stepper__line is-done"></div>
+    <div class="stepper__step is-done"><span class="stepper__num">2</span><span class="stepper__label">Assentos</span></div>
+    <div class="stepper__line is-done"></div>
+    <div class="stepper__step is-current"><span class="stepper__num">3</span><span class="stepper__label">Pagamento</span></div>
+    <div class="stepper__line "></div>
+    <div class="stepper__step "><span class="stepper__num">4</span><span class="stepper__label">Confirmação</span></div>
+  </div>
+    <section class="flow-panel" id="esqueceram">
+      <div class="flow-movieinfo">
+        <img src="img/esqueceram.png" alt="Esqueceram de Mim">
+        <div>
+          <h2>Esqueceram de Mim</h2>
+          <p><span class="tag">★ 7.6</span> · Comédia · Livre · 1h 43min</p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary__row"><span>Sessão</span><b>Hoje · Sala 1 · Dublado</b></div>
+        <div class="summary__row"><span>Assentos</span><b>F7, F8</b></div>
+        <div class="summary__row"><span>2x Inteira</span><b>R$ 64,00</b></div>
+        <div class="summary__row"><span>Taxa de conveniência</span><b>R$ 4,00</b></div>
+        <div class="summary__row total"><span>Total</span><b>R$ 68,00</b></div>
+      </div>
+
+      <div class="pay-methods">
+        <input type="radio" name="pay-esqueceram" id="pay-card" checked>
+        <label for="pay-card"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>Cartão</label>
+        <input type="radio" name="pay-esqueceram" id="pay-pix">
+        <label for="pay-pix"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 12l10 10 10-10L12 2zm0 4.24L17.76 12 12 17.76 6.24 12 12 6.24z"/></svg>Pix</label>
+        <input type="radio" name="pay-esqueceram" id="pay-cash">
+        <label for="pay-cash"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm8 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM6 9v6M18 9v6"/></svg>Na bilheteria</label>
+      </div>
+
+      <div class="pay-panel pay-panel--card">
+        <div class="field">
+          <label>Número do cartão</label>
+          <input type="text" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Validade</label>
+            <input type="text" placeholder="MM/AA">
+          </div>
+          <div class="field">
+            <label>CVV</label>
+            <input type="text" placeholder="123">
+          </div>
+        </div>
+        <div class="field">
+          <label>Nome impresso no cartão</label>
+          <input type="text" placeholder="Como está no cartão">
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--pix">
+        <div class="pix-box">
+          <div class="qr"><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span></div>
+          <p>Escaneie o QR code com o app do seu banco</p>
+          <span class="pix-key">chave: ingressos@cinemasraj.com.br</span>
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--cash">
+        <div class="cash-box">
+          Reserve agora e pague na bilheteria em até <b style="color:var(--gold)">30 minutos</b> antes da sessão.
+        </div>
+      </div>
+
+      <p class="demo-note">Ambiente de demonstração — nenhum dado é enviado ou processado.</p>
+
+      <div class="flow-actions">
+        <a href="comprar-assentos.html#esqueceram" class="btn btn--ghost"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>Voltar</a>
+        <a href="comprar-confirmacao.html#esqueceram" class="btn btn--primary">Finalizar compra</a>
+      </div>
+    </section>
+    <section class="flow-panel" id="intocaveis">
+      <div class="flow-movieinfo">
+        <img src="img/intocaveis.png" alt="Intocáveis">
+        <div>
+          <h2>Intocáveis</h2>
+          <p><span class="tag">★ 8.5</span> · Drama · 12 anos · 1h 52min</p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary__row"><span>Sessão</span><b>Hoje · Sala 1 · Legendado</b></div>
+        <div class="summary__row"><span>Assentos</span><b>F7, F8</b></div>
+        <div class="summary__row"><span>2x Inteira</span><b>R$ 64,00</b></div>
+        <div class="summary__row"><span>Taxa de conveniência</span><b>R$ 4,00</b></div>
+        <div class="summary__row total"><span>Total</span><b>R$ 68,00</b></div>
+      </div>
+
+      <div class="pay-methods">
+        <input type="radio" name="pay-intocaveis" id="pay-card" checked>
+        <label for="pay-card"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>Cartão</label>
+        <input type="radio" name="pay-intocaveis" id="pay-pix">
+        <label for="pay-pix"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 12l10 10 10-10L12 2zm0 4.24L17.76 12 12 17.76 6.24 12 12 6.24z"/></svg>Pix</label>
+        <input type="radio" name="pay-intocaveis" id="pay-cash">
+        <label for="pay-cash"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm8 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM6 9v6M18 9v6"/></svg>Na bilheteria</label>
+      </div>
+
+      <div class="pay-panel pay-panel--card">
+        <div class="field">
+          <label>Número do cartão</label>
+          <input type="text" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Validade</label>
+            <input type="text" placeholder="MM/AA">
+          </div>
+          <div class="field">
+            <label>CVV</label>
+            <input type="text" placeholder="123">
+          </div>
+        </div>
+        <div class="field">
+          <label>Nome impresso no cartão</label>
+          <input type="text" placeholder="Como está no cartão">
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--pix">
+        <div class="pix-box">
+          <div class="qr"><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span></div>
+          <p>Escaneie o QR code com o app do seu banco</p>
+          <span class="pix-key">chave: ingressos@cinemasraj.com.br</span>
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--cash">
+        <div class="cash-box">
+          Reserve agora e pague na bilheteria em até <b style="color:var(--gold)">30 minutos</b> antes da sessão.
+        </div>
+      </div>
+
+      <p class="demo-note">Ambiente de demonstração — nenhum dado é enviado ou processado.</p>
+
+      <div class="flow-actions">
+        <a href="comprar-assentos.html#intocaveis" class="btn btn--ghost"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>Voltar</a>
+        <a href="comprar-confirmacao.html#intocaveis" class="btn btn--primary">Finalizar compra</a>
+      </div>
+    </section>
+    <section class="flow-panel" id="lagoa">
+      <div class="flow-movieinfo">
+        <img src="img/lagoaazul.png" alt="Lagoa Azul">
+        <div>
+          <h2>Lagoa Azul</h2>
+          <p><span class="tag">★ 6.0</span> · Romance · 14 anos · 1h 44min</p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary__row"><span>Sessão</span><b>Hoje · Sala 2 · Dublado</b></div>
+        <div class="summary__row"><span>Assentos</span><b>F7, F8</b></div>
+        <div class="summary__row"><span>2x Inteira</span><b>R$ 64,00</b></div>
+        <div class="summary__row"><span>Taxa de conveniência</span><b>R$ 4,00</b></div>
+        <div class="summary__row total"><span>Total</span><b>R$ 68,00</b></div>
+      </div>
+
+      <div class="pay-methods">
+        <input type="radio" name="pay-lagoa" id="pay-card" checked>
+        <label for="pay-card"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>Cartão</label>
+        <input type="radio" name="pay-lagoa" id="pay-pix">
+        <label for="pay-pix"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 12l10 10 10-10L12 2zm0 4.24L17.76 12 12 17.76 6.24 12 12 6.24z"/></svg>Pix</label>
+        <input type="radio" name="pay-lagoa" id="pay-cash">
+        <label for="pay-cash"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm8 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM6 9v6M18 9v6"/></svg>Na bilheteria</label>
+      </div>
+
+      <div class="pay-panel pay-panel--card">
+        <div class="field">
+          <label>Número do cartão</label>
+          <input type="text" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Validade</label>
+            <input type="text" placeholder="MM/AA">
+          </div>
+          <div class="field">
+            <label>CVV</label>
+            <input type="text" placeholder="123">
+          </div>
+        </div>
+        <div class="field">
+          <label>Nome impresso no cartão</label>
+          <input type="text" placeholder="Como está no cartão">
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--pix">
+        <div class="pix-box">
+          <div class="qr"><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span></div>
+          <p>Escaneie o QR code com o app do seu banco</p>
+          <span class="pix-key">chave: ingressos@cinemasraj.com.br</span>
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--cash">
+        <div class="cash-box">
+          Reserve agora e pague na bilheteria em até <b style="color:var(--gold)">30 minutos</b> antes da sessão.
+        </div>
+      </div>
+
+      <p class="demo-note">Ambiente de demonstração — nenhum dado é enviado ou processado.</p>
+
+      <div class="flow-actions">
+        <a href="comprar-assentos.html#lagoa" class="btn btn--ghost"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>Voltar</a>
+        <a href="comprar-confirmacao.html#lagoa" class="btn btn--primary">Finalizar compra</a>
+      </div>
+    </section>
+    <section class="flow-panel" id="forrest">
+      <div class="flow-movieinfo">
+        <img src="img/forrest.jpg" alt="Forrest Gump">
+        <div>
+          <h2>Forrest Gump</h2>
+          <p><span class="tag">★ 8.8</span> · Drama · 12 anos · 2h 22min</p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary__row"><span>Sessão</span><b>Hoje · Sala 3 · Dublado</b></div>
+        <div class="summary__row"><span>Assentos</span><b>F7, F8</b></div>
+        <div class="summary__row"><span>2x Inteira</span><b>R$ 64,00</b></div>
+        <div class="summary__row"><span>Taxa de conveniência</span><b>R$ 4,00</b></div>
+        <div class="summary__row total"><span>Total</span><b>R$ 68,00</b></div>
+      </div>
+
+      <div class="pay-methods">
+        <input type="radio" name="pay-forrest" id="pay-card" checked>
+        <label for="pay-card"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>Cartão</label>
+        <input type="radio" name="pay-forrest" id="pay-pix">
+        <label for="pay-pix"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 12l10 10 10-10L12 2zm0 4.24L17.76 12 12 17.76 6.24 12 12 6.24z"/></svg>Pix</label>
+        <input type="radio" name="pay-forrest" id="pay-cash">
+        <label for="pay-cash"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm8 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM6 9v6M18 9v6"/></svg>Na bilheteria</label>
+      </div>
+
+      <div class="pay-panel pay-panel--card">
+        <div class="field">
+          <label>Número do cartão</label>
+          <input type="text" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Validade</label>
+            <input type="text" placeholder="MM/AA">
+          </div>
+          <div class="field">
+            <label>CVV</label>
+            <input type="text" placeholder="123">
+          </div>
+        </div>
+        <div class="field">
+          <label>Nome impresso no cartão</label>
+          <input type="text" placeholder="Como está no cartão">
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--pix">
+        <div class="pix-box">
+          <div class="qr"><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span></div>
+          <p>Escaneie o QR code com o app do seu banco</p>
+          <span class="pix-key">chave: ingressos@cinemasraj.com.br</span>
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--cash">
+        <div class="cash-box">
+          Reserve agora e pague na bilheteria em até <b style="color:var(--gold)">30 minutos</b> antes da sessão.
+        </div>
+      </div>
+
+      <p class="demo-note">Ambiente de demonstração — nenhum dado é enviado ou processado.</p>
+
+      <div class="flow-actions">
+        <a href="comprar-assentos.html#forrest" class="btn btn--ghost"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>Voltar</a>
+        <a href="comprar-confirmacao.html#forrest" class="btn btn--primary">Finalizar compra</a>
+      </div>
+    </section>
+    <section class="flow-panel" id="matrix">
+      <div class="flow-movieinfo">
+        <img src="img/matrix.png" alt="Matrix">
+        <div>
+          <h2>Matrix</h2>
+          <p><span class="tag">★ 8.7</span> · Ficção · 14 anos · 2h 16min</p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary__row"><span>Sessão</span><b>Hoje · Sala 2 · Dublado</b></div>
+        <div class="summary__row"><span>Assentos</span><b>F7, F8</b></div>
+        <div class="summary__row"><span>2x Inteira</span><b>R$ 64,00</b></div>
+        <div class="summary__row"><span>Taxa de conveniência</span><b>R$ 4,00</b></div>
+        <div class="summary__row total"><span>Total</span><b>R$ 68,00</b></div>
+      </div>
+
+      <div class="pay-methods">
+        <input type="radio" name="pay-matrix" id="pay-card" checked>
+        <label for="pay-card"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>Cartão</label>
+        <input type="radio" name="pay-matrix" id="pay-pix">
+        <label for="pay-pix"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 12l10 10 10-10L12 2zm0 4.24L17.76 12 12 17.76 6.24 12 12 6.24z"/></svg>Pix</label>
+        <input type="radio" name="pay-matrix" id="pay-cash">
+        <label for="pay-cash"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm8 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM6 9v6M18 9v6"/></svg>Na bilheteria</label>
+      </div>
+
+      <div class="pay-panel pay-panel--card">
+        <div class="field">
+          <label>Número do cartão</label>
+          <input type="text" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Validade</label>
+            <input type="text" placeholder="MM/AA">
+          </div>
+          <div class="field">
+            <label>CVV</label>
+            <input type="text" placeholder="123">
+          </div>
+        </div>
+        <div class="field">
+          <label>Nome impresso no cartão</label>
+          <input type="text" placeholder="Como está no cartão">
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--pix">
+        <div class="pix-box">
+          <div class="qr"><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span></div>
+          <p>Escaneie o QR code com o app do seu banco</p>
+          <span class="pix-key">chave: ingressos@cinemasraj.com.br</span>
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--cash">
+        <div class="cash-box">
+          Reserve agora e pague na bilheteria em até <b style="color:var(--gold)">30 minutos</b> antes da sessão.
+        </div>
+      </div>
+
+      <p class="demo-note">Ambiente de demonstração — nenhum dado é enviado ou processado.</p>
+
+      <div class="flow-actions">
+        <a href="comprar-assentos.html#matrix" class="btn btn--ghost"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>Voltar</a>
+        <a href="comprar-confirmacao.html#matrix" class="btn btn--primary">Finalizar compra</a>
+      </div>
+    </section>
+    <section class="flow-panel" id="chefao">
+      <div class="flow-movieinfo">
+        <img src="img/chefao.jpg" alt="O Poderoso Chefão">
+        <div>
+          <h2>O Poderoso Chefão</h2>
+          <p><span class="tag">★ 9.2</span> · Crime · 14 anos · 2h 55min</p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary__row"><span>Sessão</span><b>Hoje · Sala 1 · Legendado</b></div>
+        <div class="summary__row"><span>Assentos</span><b>F7, F8</b></div>
+        <div class="summary__row"><span>2x Inteira</span><b>R$ 64,00</b></div>
+        <div class="summary__row"><span>Taxa de conveniência</span><b>R$ 4,00</b></div>
+        <div class="summary__row total"><span>Total</span><b>R$ 68,00</b></div>
+      </div>
+
+      <div class="pay-methods">
+        <input type="radio" name="pay-chefao" id="pay-card" checked>
+        <label for="pay-card"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>Cartão</label>
+        <input type="radio" name="pay-chefao" id="pay-pix">
+        <label for="pay-pix"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 12l10 10 10-10L12 2zm0 4.24L17.76 12 12 17.76 6.24 12 12 6.24z"/></svg>Pix</label>
+        <input type="radio" name="pay-chefao" id="pay-cash">
+        <label for="pay-cash"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm8 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM6 9v6M18 9v6"/></svg>Na bilheteria</label>
+      </div>
+
+      <div class="pay-panel pay-panel--card">
+        <div class="field">
+          <label>Número do cartão</label>
+          <input type="text" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Validade</label>
+            <input type="text" placeholder="MM/AA">
+          </div>
+          <div class="field">
+            <label>CVV</label>
+            <input type="text" placeholder="123">
+          </div>
+        </div>
+        <div class="field">
+          <label>Nome impresso no cartão</label>
+          <input type="text" placeholder="Como está no cartão">
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--pix">
+        <div class="pix-box">
+          <div class="qr"><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span></div>
+          <p>Escaneie o QR code com o app do seu banco</p>
+          <span class="pix-key">chave: ingressos@cinemasraj.com.br</span>
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--cash">
+        <div class="cash-box">
+          Reserve agora e pague na bilheteria em até <b style="color:var(--gold)">30 minutos</b> antes da sessão.
+        </div>
+      </div>
+
+      <p class="demo-note">Ambiente de demonstração — nenhum dado é enviado ou processado.</p>
+
+      <div class="flow-actions">
+        <a href="comprar-assentos.html#chefao" class="btn btn--ghost"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>Voltar</a>
+        <a href="comprar-confirmacao.html#chefao" class="btn btn--primary">Finalizar compra</a>
+      </div>
+    </section>
+    <section class="flow-panel" id="pulp">
+      <div class="flow-movieinfo">
+        <img src="img/pulp.jpg" alt="Pulp Fiction">
+        <div>
+          <h2>Pulp Fiction</h2>
+          <p><span class="tag">★ 8.9</span> · Crime · 16 anos · 2h 34min</p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary__row"><span>Sessão</span><b>Hoje · Sala 3 · Legendado</b></div>
+        <div class="summary__row"><span>Assentos</span><b>F7, F8</b></div>
+        <div class="summary__row"><span>2x Inteira</span><b>R$ 64,00</b></div>
+        <div class="summary__row"><span>Taxa de conveniência</span><b>R$ 4,00</b></div>
+        <div class="summary__row total"><span>Total</span><b>R$ 68,00</b></div>
+      </div>
+
+      <div class="pay-methods">
+        <input type="radio" name="pay-pulp" id="pay-card" checked>
+        <label for="pay-card"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>Cartão</label>
+        <input type="radio" name="pay-pulp" id="pay-pix">
+        <label for="pay-pix"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 12l10 10 10-10L12 2zm0 4.24L17.76 12 12 17.76 6.24 12 12 6.24z"/></svg>Pix</label>
+        <input type="radio" name="pay-pulp" id="pay-cash">
+        <label for="pay-cash"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm8 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM6 9v6M18 9v6"/></svg>Na bilheteria</label>
+      </div>
+
+      <div class="pay-panel pay-panel--card">
+        <div class="field">
+          <label>Número do cartão</label>
+          <input type="text" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Validade</label>
+            <input type="text" placeholder="MM/AA">
+          </div>
+          <div class="field">
+            <label>CVV</label>
+            <input type="text" placeholder="123">
+          </div>
+        </div>
+        <div class="field">
+          <label>Nome impresso no cartão</label>
+          <input type="text" placeholder="Como está no cartão">
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--pix">
+        <div class="pix-box">
+          <div class="qr"><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span></div>
+          <p>Escaneie o QR code com o app do seu banco</p>
+          <span class="pix-key">chave: ingressos@cinemasraj.com.br</span>
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--cash">
+        <div class="cash-box">
+          Reserve agora e pague na bilheteria em até <b style="color:var(--gold)">30 minutos</b> antes da sessão.
+        </div>
+      </div>
+
+      <p class="demo-note">Ambiente de demonstração — nenhum dado é enviado ou processado.</p>
+
+      <div class="flow-actions">
+        <a href="comprar-assentos.html#pulp" class="btn btn--ghost"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>Voltar</a>
+        <a href="comprar-confirmacao.html#pulp" class="btn btn--primary">Finalizar compra</a>
+      </div>
+    </section>
+    <section class="flow-panel" id="clube">
+      <div class="flow-movieinfo">
+        <img src="img/clube.jpg" alt="Clube da Luta">
+        <div>
+          <h2>Clube da Luta</h2>
+          <p><span class="tag">★ 8.8</span> · Drama · 18 anos · 2h 19min</p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary__row"><span>Sessão</span><b>Hoje · Sala 2 · Legendado</b></div>
+        <div class="summary__row"><span>Assentos</span><b>F7, F8</b></div>
+        <div class="summary__row"><span>2x Inteira</span><b>R$ 64,00</b></div>
+        <div class="summary__row"><span>Taxa de conveniência</span><b>R$ 4,00</b></div>
+        <div class="summary__row total"><span>Total</span><b>R$ 68,00</b></div>
+      </div>
+
+      <div class="pay-methods">
+        <input type="radio" name="pay-clube" id="pay-card" checked>
+        <label for="pay-card"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>Cartão</label>
+        <input type="radio" name="pay-clube" id="pay-pix">
+        <label for="pay-pix"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 12l10 10 10-10L12 2zm0 4.24L17.76 12 12 17.76 6.24 12 12 6.24z"/></svg>Pix</label>
+        <input type="radio" name="pay-clube" id="pay-cash">
+        <label for="pay-cash"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm8 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM6 9v6M18 9v6"/></svg>Na bilheteria</label>
+      </div>
+
+      <div class="pay-panel pay-panel--card">
+        <div class="field">
+          <label>Número do cartão</label>
+          <input type="text" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Validade</label>
+            <input type="text" placeholder="MM/AA">
+          </div>
+          <div class="field">
+            <label>CVV</label>
+            <input type="text" placeholder="123">
+          </div>
+        </div>
+        <div class="field">
+          <label>Nome impresso no cartão</label>
+          <input type="text" placeholder="Como está no cartão">
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--pix">
+        <div class="pix-box">
+          <div class="qr"><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class="off"></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span><span class="off"></span><span class="off"></span><span class="off"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class="off"></span><span class=""></span><span class=""></span><span class="off"></span></div>
+          <p>Escaneie o QR code com o app do seu banco</p>
+          <span class="pix-key">chave: ingressos@cinemasraj.com.br</span>
+        </div>
+      </div>
+
+      <div class="pay-panel pay-panel--cash">
+        <div class="cash-box">
+          Reserve agora e pague na bilheteria em até <b style="color:var(--gold)">30 minutos</b> antes da sessão.
+        </div>
+      </div>
+
+      <p class="demo-note">Ambiente de demonstração — nenhum dado é enviado ou processado.</p>
+
+      <div class="flow-actions">
+        <a href="comprar-assentos.html#clube" class="btn btn--ghost"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>Voltar</a>
+        <a href="comprar-confirmacao.html#clube" class="btn btn--primary">Finalizar compra</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <span class="brand"><span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="24" r="5.2" fill="currentColor"/><circle cx="24" cy="10" r="4.2" fill="currentColor"/><circle cx="36.1" cy="17" r="4.2" fill="currentColor"/><circle cx="36.1" cy="31" r="4.2" fill="currentColor"/><circle cx="24" cy="38" r="4.2" fill="currentColor"/><circle cx="11.9" cy="31" r="4.2" fill="currentColor"/><circle cx="11.9" cy="17" r="4.2" fill="currentColor"/></svg></span><span class="brand__name">Cinemas <b>Raj</b></span></span>
+    <p>Ramesar Shopping · Av. do Turismo, s/n · Manaus – AM</p>
+    <span class="footer__copy">© 2026 Cinemas Raj. Todos os direitos reservados.</span>
+  </footer>
+
+</body>
+</html>
